@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <style>
         :root {
@@ -18,9 +21,9 @@
             --accent-secondary: #d946ef;
             --accent-gradient: linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%);
             --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
+            --text-secondary: #134ea1;
             --success-color: #10b981;
-            --error-color: #ef4444;
+            --error-color: #2e2323;
             --glow-color: rgba(139, 92, 246, 0.15);
         }
 
@@ -80,8 +83,8 @@
             -webkit-backdrop-filter: blur(20px);
             border: 1px solid var(--card-border);
             border-radius: 24px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 
-                        0 0 50px var(--glow-color);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3),
+                0 0 50px var(--glow-color);
             z-index: 1;
             position: relative;
             text-align: center;
@@ -90,8 +93,8 @@
 
         .container:hover {
             transform: translateY(-2px);
-            box-shadow: 0 22px 45px rgba(0, 0, 0, 0.35), 
-                        0 0 60px rgba(139, 92, 246, 0.2);
+            box-shadow: 0 22px 45px rgba(0, 0, 0, 0.35),
+                0 0 60px rgba(139, 92, 246, 0.2);
         }
 
         h1 {
@@ -143,7 +146,7 @@
         input[type="text"]:focus {
             border-color: var(--accent-primary);
             box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.25),
-                        inset 0 2px 4px rgba(0, 0, 0, 0.2);
+                inset 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         input[type="text"]::placeholder {
@@ -173,12 +176,10 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(
-                90deg,
-                transparent,
-                rgba(255, 255, 255, 0.2),
-                transparent
-            );
+            background: linear-gradient(90deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.2),
+                    transparent);
             transition: 0.5s;
         }
 
@@ -213,8 +214,15 @@
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 0.6; }
-            50% { opacity: 1; }
+
+            0%,
+            100% {
+                opacity: 0.6;
+            }
+
+            50% {
+                opacity: 1;
+            }
         }
 
         /* Responsive Design */
@@ -224,17 +232,19 @@
                 margin: 1rem;
                 border-radius: 20px;
             }
+
             h1 {
                 font-size: 1.6rem;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>🎮 Team-Test 리허설 화면</h1>
         <p class="subtitle">도쿄 리전 Supabase 연결 테스트</p>
-        
+
         <hr class="divider">
 
         <div>
@@ -247,4 +257,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
